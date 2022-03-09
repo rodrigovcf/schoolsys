@@ -72,14 +72,6 @@ public abstract class CurricularComponent implements ICurricularComp{
 			return 0;
 	}
 	
-	public void showResult(double finalResult) {
-		
-		if (finalResult >= 7.0) {
-			System.out.println("Passed in discipline " + componentName);
-		}else if(finalResult > 7.0 && finalResult > 3.0) {
-			System.out.println("Retrieval in discipline " + componentName);
-		}else
-			System.out.println("Disapproved in discipline " + componentName);
-	}
-	
+	public abstract void showResult(double finalResult);
+			
 }
