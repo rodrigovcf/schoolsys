@@ -15,6 +15,9 @@ O intuito foi deixar essa classe apenas como receptora de dados, fazendo um pape
 Foram criadas duas listas com alunos (entidade) para simular a ideia de cadastro de disciplinas de curso regular e técnico respectivamente. 
 
 ### Conclusão
-O projeto foi feito em pouco tempo, portanto, com certeza é possível identificar brechas para aprimoramento. Portanto, caso encontrem, fiquem a vontade para sugestões.
+Antes da submissão do projeto, resolvi ajustar para o uso do "lombok" como sugestão do professor Venilton FalvoJr @falvojr.
+O projeto foi feito em pouco tempo, portanto, com certeza é possível identificar brechas para aprimoramento. Portanto, caso encontrem essas, fiquem a vontade para me passar sugestões.
+
+
 
 Obrigado!
