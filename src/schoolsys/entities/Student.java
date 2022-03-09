@@ -5,7 +5,7 @@ public class Student{
 	private int id;
 	private String name;
 	private String schoolClass;
-	private int sc1, sc2, sc3, average;
+	private double sc1, sc2, sc3, average;
 	
 	public int getId() {
 		return id;
@@ -26,25 +26,25 @@ public class Student{
 		this.schoolClass = schoolClass;
 	}
 	
-	public int getSc1() {
+	public double getSc1() {
 		return sc1;
 	}
-	public void setSc1(int sc1) {
+	public void setSc1(double sc1) {
 		this.sc1 = sc1;
 	}
-	public int getSc2() {
+	public double getSc2() {
 		return sc2;
 	}
 	public void setSc2(int sc2) {
 		this.sc2 = sc2;
 	}
-	public int getSc3() {
+	public double getSc3() {
 		return sc3;
 	}
 	public void setSc3(int sc3) {
 		this.sc3 = sc3;
 	}
-	public int getAverage() {
+	public double getAverage() {
 		return average;
 	}
 	public void setAverage(int average) {

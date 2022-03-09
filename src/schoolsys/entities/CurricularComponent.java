@@ -4,6 +4,8 @@ import java.util.List;
 
 public class CurricularComponent {	
 	
+	private enum typeComponent {THECHNICAL, REGULAR};
+	
 	private String componentName;
 	private String schoolCurse;
 	private List<Student> students;
