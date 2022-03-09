@@ -2,12 +2,15 @@ package schoolsys.entities;
 
 import java.util.List;
 
-public class CurricularComponent {	
-	
-	private enum typeComponent {THECHNICAL, REGULAR};
+import interfaceactions.ICurricularComp;
+
+public abstract class CurricularComponent implements ICurricularComp{	
+			
+	private ComponentType componentType;
 	
 	private String componentName;
 	private String schoolCurse;
+	private Teacher teacher;
 	private List<Student> students;
 			
 	public CurricularComponent(String componentName, String schoolCurse, List<Student> students) {
@@ -31,14 +34,52 @@ public class CurricularComponent {
 	
 	public void setSchoolCurse(String schoolCurse) {
 		this.schoolCurse = schoolCurse;
-	}
+	}	
 	
+	public ComponentType getComponentType() {
+		return componentType;
+	}
+
+	public void setComponentType(ComponentType componentType) {
+		this.componentType = componentType;
+	}
+
+	public Teacher getTeacher() {
+		return teacher;
+	}
+
+	public void setTeacher(Teacher teacher) {
+		this.teacher = teacher;
+	}
+
 	public List<Student> getStudents() {
 		return students;
 	}
 	
 	public void setStudents(List<Student> students) {
 		this.students = students;
+	}
+	
+	public double returnResult(double sc1, double sc2, double sc3, String componentType) {
+		
+		setComponentType(ComponentType.valueOf(componentType));
+		
+		if(getComponentType().equals(ComponentType.REGULAR)) {
+			return (sc1 + sc2 + sc3)/3;
+		}else if(getComponentType().equals(ComponentType.THECHNICAL)) {
+			return ((sc1 * 0.6) + (sc2 * 0.5) + (sc3 * 0.4))/3;
+		}else
+			return 0;
+	}
+	
+	public void showResult(double finalResult) {
+		
+		if (finalResult >= 7.0) {
+			System.out.println("Passed in discipline " + componentName);
+		}else if(finalResult > 7.0 && finalResult > 3.0) {
+			System.out.println("Retrieval in discipline " + componentName);
+		}else
+			System.out.println("Disapproved in discipline " + componentName);
 	}
 	
 }

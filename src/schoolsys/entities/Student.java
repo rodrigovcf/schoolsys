@@ -5,7 +5,7 @@ public class Student{
 	private int id;
 	private String name;
 	private String schoolClass;
-	private double sc1, sc2, sc3, average;
+	private double sc1, sc2, sc3, score;
 	
 	public int getId() {
 		return id;
@@ -45,10 +45,10 @@ public class Student{
 		this.sc3 = sc3;
 	}
 	public double getAverage() {
-		return average;
+		return score;
 	}
 	public void setAverage(int average) {
-		this.average = average;
+		this.score = average;
 	}
 	
 	@Override
