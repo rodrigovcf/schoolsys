@@ -5,7 +5,14 @@ public class Teacher {
 	private int id;
 	private String name;
 	private CurricularComponent component;
-
+	
+	public Teacher(int id, String name, CurricularComponent component) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.component = component;
+	}
+	
 	public int getId() {
 		return id;
 	}

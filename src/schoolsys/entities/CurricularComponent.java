@@ -60,7 +60,7 @@ public abstract class CurricularComponent implements ICurricularComp{
 		this.students = students;
 	}
 	
-	public double returnResult(double sc1, double sc2, double sc3, String componentType) {
+	public double returnMedia(double sc1, double sc2, double sc3, String componentType) {
 		
 		setComponentType(ComponentType.valueOf(componentType));
 		
@@ -73,5 +73,7 @@ public abstract class CurricularComponent implements ICurricularComp{
 	}
 	
 	public abstract void showResult(double finalResult);
+	
+	public abstract void showAll(CurricularComponent cc, int index, double finalResult);
 			
 }

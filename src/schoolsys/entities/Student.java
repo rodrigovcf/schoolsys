@@ -35,19 +35,19 @@ public class Student{
 	public double getSc2() {
 		return sc2;
 	}
-	public void setSc2(int sc2) {
+	public void setSc2(double sc2) {
 		this.sc2 = sc2;
 	}
 	public double getSc3() {
 		return sc3;
 	}
-	public void setSc3(int sc3) {
+	public void setSc3(double sc3) {
 		this.sc3 = sc3;
 	}
 	public double getAverage() {
 		return score;
 	}
-	public void setAverage(int average) {
+	public void setAverage(double average) {
 		this.score = average;
 	}
 	
